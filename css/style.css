@@ -136,6 +136,78 @@ button[type=submit]{
 
 }
 
+/* ABOUT SECTION */
+
+.about-container{
+    padding: 10px 100px;
+    text-align: left;
+}
+
+main aside{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+main article{
+    float: left;
+    width: 65%;
+}
+
+.clr{
+    clear: both;
+}
+
+.dark{
+    padding: 15px;
+    color: white;
+    background-color: slategrey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+/* MEDIA QUERIES */
+@media (max-width:767px){
+    main .about-container article, aside{
+        float:none;
+        text-align:center;
+        width: 100%;
+        display: block;
+    }
+
+    main .about-container aside .dark, .quote{
+        display: block;
+        width:100%;
+        float: none;
+        
+    }
+
+}
+
+
+/* SERVICES */
+
+.services ul li {
+    list-style: none;
+    padding: 20px;
+    border: solid 1px darkgrey ;
+    margin-bottom: 5px;
+    background-color: rgb(220, 225, 230);
+}
+
+aside .dark {
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
