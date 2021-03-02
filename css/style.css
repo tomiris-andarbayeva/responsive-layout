@@ -9,7 +9,7 @@ body{
 .container {
     background-color: rgb(67, 64, 83);
     color: white;
-    padding: 20px 40px;
+    padding: 20px 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,6 +61,10 @@ form input, button{
     padding: 5px;
 }
 
+section.newsletter .container form input {
+    margin-bottom: 10px;
+}
+
 button[type=submit] {
     background-color: orange;
     color: white;
@@ -78,7 +82,6 @@ button[type=submit] {
     padding: 20px 0px;
 }
 
-/* FOOTER */
 footer{
     background-color: orange;
     padding: 15px;
@@ -87,7 +90,7 @@ footer{
 
 
 
-/* MEDIA QUERIES */
+/* MEDIA QUERIES FOR INDEX.HTML*/
 @media (max-width:767px){
 
     /* HEADER */
@@ -111,7 +114,7 @@ form {
     box-sizing: border-box;
 }
 
-button[type=submit]{
+section.newsletter .container form button[type=submit]{
     width: 90%;
 }
 
@@ -136,6 +139,7 @@ button[type=submit]{
 
 }
 
+/* ---------------------------------------------- */
 /* ABOUT SECTION */
 
 .about-container{
@@ -152,6 +156,7 @@ main aside{
 main article{
     float: left;
     width: 65%;
+    margin-bottom: 20px;
 }
 
 .clr{
@@ -166,25 +171,26 @@ main article{
     margin-bottom: 10px;
 
 }
-/* MEDIA QUERIES */
+/* MEDIA QUERIES FOR BOTH ABOUT AND SERVICES */
 @media (max-width:767px){
-    main .about-container article, aside{
+    main article,  main aside{
         float:none;
         text-align:center;
         width: 100%;
         display: block;
     }
 
-    main .about-container aside .dark, .quote{
-        display: block;
-        width:100%;
-        float: none;
-        
+    .about-container{
+        padding: 10px 30px;
     }
 
+    .dark{
+        margin:0px;
+    }
+    
 }
 
-
+/* ---------------------------------------------- */
 /* SERVICES */
 
 .services ul li {
@@ -194,22 +200,29 @@ main article{
     margin-bottom: 5px;
     background-color: rgb(220, 225, 230);
 }
+ main .about-container aside .dark h4{
+     text-align: center;
+ }
 
-aside .dark {
+.quote{
     width: 80%;
+    margin:auto;
+    text-align: center;
 }
 
+ button{
+    padding: 5px 20px;
 
+}
+.label-input {
+    display: grid;
+    margin-bottom: 10px;
+}
 
-
-
-
-
-
-
-
-
-
+main .about-container aside .dark form.quote .label-input input{
+    box-sizing: border-box;
+    width: 100%;
+}
 
 
 
